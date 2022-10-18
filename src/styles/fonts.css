@@ -1,0 +1,11 @@
+@layer fonts {
+  @font-face {
+    font-family: "Lora";
+    src: url("../assets/fonts/Lora-VariableFont.ttf");
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/Poppins-Regular.ttf");
+  }
+}

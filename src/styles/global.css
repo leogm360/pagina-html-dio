@@ -1,0 +1,125 @@
+@layer global {
+  body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #001540;
+    color: white;
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Lora", serif;
+    font-weight: 700;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  .header__title {
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem 0;
+  }
+
+  .header__image-container {
+    text-align: center;
+  }
+
+  .header__image {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+  }
+
+  .nav {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .nav__title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav__item {
+    margin-left: 1.5rem;
+  }
+
+  .nav__item + .nav__item {
+    margin-top: 0.25rem;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+
+  .content {
+    margin-bottom: 1rem;
+  }
+
+  .content__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .content__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+
+  @media only screen and (min-width: 640px) {
+    .nav {
+      padding: 0 2rem;
+    }
+
+    .main {
+      padding: 0 2rem;
+    }
+
+    .content__content {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .footer {
+      padding: 2rem 2rem;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .nav {
+      padding: 0 3.75rem;
+    }
+
+    .main {
+      padding: 0 3.75rem;
+    }
+
+    .content__content {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer {
+      padding: 2rem 3.75rem;
+    }
+  }
+}
